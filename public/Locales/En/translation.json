@@ -1,3 +1,7 @@
 {
-    "home-page-header": "Главная"
+    "home": "HOME",
+    "products": "PRODUCTS",
+    "certificates": "CERTIFICATES",
+    "about-us": "ABOUT US",
+    "contacts": "CONTACTS"
 }
