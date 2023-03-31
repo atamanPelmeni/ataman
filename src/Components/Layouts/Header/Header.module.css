@@ -4,6 +4,9 @@ header {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    animation: alternate;
+    /* animate: x: 100;
+    transition: delay: 1; */
 }
 ul {
     display: flex;
@@ -24,7 +27,7 @@ li {
 .logo {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 50%;
+    padding-left: 80%;
 }
 
 .link_basket {

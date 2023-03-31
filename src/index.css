@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=IBM+Plex+Mono&family=Inter:wght@400;500;700&family=Lato:wght@700&family=Lusitana&family=Merriweather:ital@1&family=Montserrat:wght@700&family=Noto+Sans&family=Noto+Sans+NKo&family=Raleway&family=Roboto:wght@300&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet');
-body {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
   font-family: 'EB Garamond', serif;
   font-family: 'IBM Plex Mono', monospace;
   font-family: 'Inter', sans-serif;
@@ -12,4 +18,5 @@ body {
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
   font-family: 'Ubuntu', sans-serif;
+
 }

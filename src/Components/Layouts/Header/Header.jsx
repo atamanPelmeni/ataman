@@ -2,6 +2,7 @@ import React, {useState, useEffect, useRef}from 'react';
 import { Link, BrowserRouter as Router } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import i18n from '../../../Language/18n';
+
 import logo from '../../../assets/logo.svg';
 import basket from '../../../assets/basket.svg';
 import s from './Header.module.css';
@@ -34,7 +35,7 @@ const changeLanguage = (language) => {
                 }}
                 onClick={handleClick}
                 >
-                <Link 
+                 <Link 
                 className={s.links} 
                 to='/'
                 >
