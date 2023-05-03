@@ -1,18 +1,18 @@
-import React, {useState, useEffect, useRef}from 'react';
-import { Link, BrowserRouter as Router } from "react-router-dom";
+import React, {useState}from 'react';
+import {
+  Link
+} from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import i18n from '../../../Language/18n';
-
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import logo from '../../../assets/logo.svg';
+import logoPhone from '../../../assets/logo-phone.svg'
 import basket from '../../../assets/basket.svg';
 import s from './Header.module.css';
 
-
 const Header = () => {
-const [isActive, setActive] = useState(false);
-const handleClick = () => {
-  setActive(current => !current)
-}
+
+  const [header, setHeader] = useState(false);
 
 const {t} = useTranslation();
 const changeLanguage = (language) => {
@@ -20,66 +20,64 @@ const changeLanguage = (language) => {
 }
   return (
   <>
-    <header>
+     <header>
       <Link to="/">
         <img src={logo} alt="" className={s.logo}/>
-        </Link>  
-        <ul className={s.nav_links}> 
-            <li 
-            style={{
-                  border: isActive ? '1px solid #FFFFFF' : '',
-                  padding: isActive ? '10px': '',
-                  position: isActive ? 'absolute': '',
-                  left: isActive ? '51%': '',
-                  top: isActive ? '8%': '',
-                }}
-                onClick={handleClick}
-                >
-                 <Link 
+        <img src={logoPhone} alt="" className={s.logoPhone}/>
+        </Link>   
+        <ul
+          className={
+                header ? [s.menu, s.active].join(' ') : [s.menu]}> 
+            <li className={s.li_links}>
+                     <Link 
                 className={s.links} 
                 to='/'
                 >
                     {t('home')}
-                    </Link>
+                    </Link> 
+              
+               
             </li>
-            <li>
+            <li className={s.li_links}>
                 <Link 
-                
                 className={s.links} 
                 to='/products'>
                     {t('products')}
                     </Link>
             </li>
-            <li>
+            <li className={s.li_links}>
                 <Link 
-                 
                 className={s.links} 
                 to='certificates'>   
                  {t('certificates')}
                 </Link>
                 </li>
-            <li>
+            <li className={s.li_links}>
+
                 <Link 
-                 
                 to='about-us' 
                 className={s.links}>
                     {t('about-us')}
                     </Link>
             </li>
-            <li>
+            <li className={s.li_links}>
+   
                 <Link 
-                 
                 className={s.links} 
                 to='contacts'>
                     {t('contacts')}
                     </Link>
             </li>
-           </ul>
-    
+           </ul> 
+           <div onClick={() => setHeader(!header)} className={s.mobile_btn}>
+            {header ? <AiOutlineClose size={30} className={s.header_icon} /> : <AiOutlineMenu size={30} className={s.header_icon} />}
              
- 
+            </div>
+      
     </header>
-    <div className={s.link_basket}>
+    <div className={s.animation}>  
+      <div className={s.link_basket}>
+        
        <Link to="basket">
                 <img src={basket} alt="" className={s.basket} />
                 </Link>
@@ -95,8 +93,8 @@ const changeLanguage = (language) => {
                RU
                </div>
                </div>
+               </div>
         </>    
-
   )
 }
 
