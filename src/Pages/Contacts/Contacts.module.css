@@ -2,10 +2,9 @@
   display: flex;
   margin-left: 10%;
   width: 80%;
-  height: 408px;
+  height: 428px;
   left: 100px;
-  top: 331.5px;
-  border: 3px solid #ed4125;
+  border: 3px solid #157044;
 }
 
 .contact {
@@ -20,13 +19,13 @@
 }
 
 .first {
-  padding-top: 95px;
+  padding-top: 50px;
   padding-left: 100px;
   display: block;
 }
 
 .second {
-  padding-top: 95px;
+  padding-top: 50px;
   padding-left: 100px;
   display: block;
 }
@@ -60,6 +59,112 @@
 .box2 {
     display: none;
 }
+@media (max-width: 1200px) {
+  .box {
+    display: none;
+     }
+     .box2 {
+       margin-left: 35%;
+       display: inline;
+       display: block;
+       width: 335px;
+       height: 437px;
+       left: 20px;
+       top: 157px;
+       border: 3px solid #157044;
+     }
+     .second2 {
+       text-transform: uppercase;
+       padding-top: 45px;
+       padding-left: 40px;
+       display: block;
+     }
+     .first2 {
+       text-transform: uppercase;
+       padding-top: 45px;
+       padding-left: 40px;
+       display: block;
+     }
+     .ataman {
+       text-transform: uppercase;
+       font-weight: 700;
+       font-size: 16px;
+       line-height: 18px;
+       text-transform: uppercase;
+   padding-bottom: 24px;
+       
+       color: #22181C;
+     }
+     
+   .li2 {
+       padding-bottom: 20px;
+       font-size: 16px;
+       line-height: 18px;
+       color: #22181c;
+   }
+   .back {
+       display: none;
+   }
+   .num2 {
+       padding-left: 14px;
+       color: #22181c;
+       text-decoration: none;
+     }
+}
+
+@media (max-width: 1000px) {
+  .box {
+ display: none;
+  }
+  .box2 {
+    margin-left: 35%;
+    display: inline;
+    display: block;
+    width: 335px;
+    height: 437px;
+    left: 20px;
+    top: 157px;
+    border: 3px solid #157044;
+  }
+  .second2 {
+    text-transform: uppercase;
+    padding-top: 45px;
+    padding-left: 40px;
+    display: block;
+  }
+  .first2 {
+    text-transform: uppercase;
+    padding-top: 45px;
+    padding-left: 40px;
+    display: block;
+  }
+  .ataman {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+padding-bottom: 24px;
+    
+    color: #22181C;
+  }
+  
+.li2 {
+    padding-bottom: 20px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #22181c;
+}
+.back {
+    display: none;
+}
+.num2 {
+    padding-left: 14px;
+    color: #22181c;
+    text-decoration: none;
+  }
+}
+
 
 @media (max-width: 800px) {
   .box {

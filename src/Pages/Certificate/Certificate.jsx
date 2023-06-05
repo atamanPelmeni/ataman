@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 import certificate from '../../assets/certificate.svg' 
-import backYellow from '../../assets/Rectangle1.svg';
+import backYellow from '../../assets/Rectangle22.svg';
 import Rectangle from '../../assets/Rectangle 16.svg'
 import certificate2 from '../../assets/certificate2.svg'
 import certificate3 from '../../assets/certificate3.svg'
@@ -16,7 +16,6 @@ const {t} = useTranslation();
 
   return (
   <>          
-  {/* <h3 className={s.certificate}>{t('certificates')}</h3> */}
   <div className={s.certificate_img}>
   <img src={certificate} alt="" />
   </div>

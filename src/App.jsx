@@ -1,7 +1,8 @@
 import React, {Suspense} from "react";
 import {
-  Routes,
-  Route
+  Routes,  
+  Route,
+  Form
 } from "react-router-dom";
 import Header from "./Components/Layouts/Header/Header";
 import Footer from './Components/Layouts/Footer/Footer.jsx';
@@ -11,22 +12,44 @@ import ProductsPage from './Pages/Products/Products.jsx';
 import CertificatePage from './Pages/Certificate/Certificate.jsx';
 import AboutUsPage from './Pages/AboutUs/AboutUs.jsx'
 import './index.css';
-import BasketPage from './Pages/Basket/Basket.jsx';
+import FormOrders from "./Pages/FormOrders/FormOrders";
 import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
+import s from './Components/Layouts/Header/Header.module.css';
+import homeStyles from './Components/Layouts/Header/Header-Home.module.css'; 
+ 
 
 function App() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-     <Header /> 
-    
+    <Suspense fallback={<div className='loading'>Loading...</div>}>
+     <Header className={s.header}/> 
      <Routes>
-        <Route exact path="/" element={<HomePage />} />
-        <Route path="/products" element={<ProductsPage />} />
-        <Route path="/certificates" element={<CertificatePage/>} />
-        <Route path="/about-us" element={<AboutUsPage/>}/>
-        <Route path="/contacts" element={<ContactsPage />} />
-        <Route path="/basket" element={<BasketPage />} />
-        <Route path="*" element={<NotFoundPage />}/>
+        <Route exact path="/" element={<div className={homeStyles.header}>
+            <HomePage />
+          </div>} />
+        <Route path="/products" element={ 
+        <div className={s.header}>
+          <ProductsPage />
+          </div>} />
+        <Route path="/certificates" element={
+          <div className={s.header}>
+            <CertificatePage/>
+            </div>} />
+        <Route path="/about-us" element={
+        <div className={s.header}>
+        <AboutUsPage />
+        </div>}/>
+        <Route path="/contacts" element={ 
+           <div className={s.header}>
+            <ContactsPage />
+            </div>} />
+        <Route path="/order" element={  
+        <div className={s.header}>
+          <FormOrders/>
+        </div>} />
+        <Route path="*" element={  
+        <div className={s.header}>
+          <NotFoundPage />
+          </div>}/>
     </Routes>
     <Footer />
   </Suspense>

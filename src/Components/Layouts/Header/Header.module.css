@@ -1,6 +1,5 @@
 header {
-  background: #ed4125;
-  /* 0C70B7, CB974E */
+  background-color: #157044;
   width: 100%;
   align-items: center;
   display: flex;
@@ -15,7 +14,6 @@ header {
   0% {
     top: -300px;
   }
-  /* 25%  {background-color: #EFA82C; left: 100px;  top:0px;} */
   100% {
     left: 0px;
     top: 0px;
@@ -34,7 +32,7 @@ li {
 }
 .links {
   font-weight: 400;
-  color: #ffffff;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -47,20 +45,13 @@ li {
   padding-left: 0;
 }
 
-.link_basket {
-  position: absolute;
-  padding: 10px 10px;
-  left: 82%;
-  background: #ed4125;
-  border-radius: 0px 0px 100px 100px;
-}
 .language {
   position: absolute;
   padding: 10px 20px;
-  background: #ed4125;
-  border-radius: 0px 0px 100px 100px;
+  background: #157044;
+  border-radius: 0px 100px 100px 100px;
   position: absolute;
-  left: 90%;
+  left: 92%;
 }
 .en {
   cursor: pointer;
@@ -94,15 +85,19 @@ li {
 .mobile_btn {
   display: none;
 }
-.menu {
-  /* display: none; */
-}
 a {
   color: white;
 }
 .logoPhone {
   display: none;
 }
+
+@media (max-width: 1920px) {
+ul {
+  /* display: flex; */
+}
+}
+
 
 @media (max-width: 1000px) {
   .en {
@@ -112,6 +107,7 @@ a {
     font-size: 15px;
   }
   header {
+    background: #157044;
     width: 100%;
     height: 80px;
     left: 0px;
@@ -128,7 +124,7 @@ a {
   .menu {
     overflow: unset;
     overflow-y: none;
-    background: #ed4125;
+    background: #157044;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     display: flex;
@@ -176,7 +172,6 @@ a {
     line-height: 21px;
     text-transform: uppercase;
     margin-bottom: 38px;
-    /* padding-top: 100px; */
     text-align: center;
   }
 }

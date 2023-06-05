@@ -15,7 +15,12 @@
   animation: 3s anim-lineUp ease-out;
   padding-top: 100px;
 }
-
+.yellow {
+  left: 0;
+  top: -20px;
+  width: 100%;
+  position: absolute;
+}
 .box_certificate {
   padding-top: 132px;
   display: flex;
@@ -26,7 +31,7 @@
   width: 100%;
   z-index: -1;
 left: 0;
-top: 1700px;
+top: 1400px;
 }
 
 @keyframes anim-lineUp {
@@ -83,3 +88,10 @@ height: 409px;
   display: inline;
  }
 }
+
+@media (max-width: 1000px) {
+.rectan {
+  display: none;
+}
+}
+ 

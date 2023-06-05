@@ -7,7 +7,6 @@ import i18n from '../../../Language/18n';
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import logo from '../../../assets/logo.svg';
 import logoPhone from '../../../assets/logo-phone.svg'
-import basket from '../../../assets/basket.svg';
 import s from './Header.module.css';
 
 const Header = () => {
@@ -20,7 +19,7 @@ const changeLanguage = (language) => {
 }
   return (
   <>
-     <header>
+     <header className={s.header}>
       <Link to="/">
         <img src={logo} alt="" className={s.logo}/>
         <img src={logoPhone} alt="" className={s.logoPhone}/>
@@ -76,12 +75,13 @@ const changeLanguage = (language) => {
       
     </header>
     <div className={s.animation}>  
-      <div className={s.link_basket}>
+      {/* <div className={s.link_basket}> */}
         
-       <Link to="basket">
+       {/* <Link to="order" className={s.basket}>
+        Заказать
                 <img src={basket} alt="" className={s.basket} />
-                </Link>
-    </div>
+                </Link> */}
+    {/* </div> */}
      
               <div className={s.language}>
                  <div 
@@ -94,6 +94,7 @@ const changeLanguage = (language) => {
                </div>
                </div>
                </div>
+  {/* <div className={s.back_header}></div> */}
         </>    
   )
 }
