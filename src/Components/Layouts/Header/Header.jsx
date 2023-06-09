@@ -1,4 +1,4 @@
-import React, {useState}from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Link
 } from "react-router-dom";
@@ -10,9 +10,16 @@ import logoPhone from '../../../assets/logo-phone.svg'
 import s from './Header.module.css';
 
 const Header = () => {
-
+ 
   const [header, setHeader] = useState(false);
-
+ useEffect(() => {
+    const body = document.querySelector('body');
+    if (header) {
+      body.style.overflow = 'hidden';
+    } else {
+      body.style.overflow = 'auto';
+    }
+  }, [header]);
 const {t} = useTranslation();
 const changeLanguage = (language) => {
     i18n.changeLanguage(language)

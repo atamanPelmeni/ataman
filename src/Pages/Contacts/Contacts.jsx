@@ -35,36 +35,15 @@ const {t} = useTranslation();
         </li>
       <li className={s.li}>
         <img src={phone} alt="" />
-        <a href="tel: +996 999 87 00 00"
+        <a href="tel:0551788146"
          className={s.num}>
-        +996 999 87 00 00
+        +996 551 788 146
         </a>
         </li>
       <li className={s.li}>
-      <img src={phone} alt="" />
-      <a href="tel:+996 551 78 41 46"
-      className={s.num}>
-          +996 551 78 41 46
-        </a>
-        </li>
-        <li className={s.li}>
-      <img src={phone} alt="" />
-      <a href="tel:+996 999 519 010"
-      className={s.num}>
-          +996 999 519 010
-        </a>
-        </li>
-        <li className={s.li}>
-      <img src={phone} alt="" />
-      <a href="tel:++996 553 177 773"
-      className={s.num}>
-          +996 553 177 773
-        </a>
-        </li>
-      <li className={s.li}>
-         <a href='mailto:atamankeyzhi@bk.ru'
+         <a href='mailto:ataman.product01@gmail.com'
         className={s.li}
-        >atamankeyzhi@bk.ru</a> 
+        > email: ataman.product01</a> 
          </li>
     </ul> 
     </div>
@@ -94,22 +73,15 @@ const {t} = useTranslation();
         </li>
       <li className={s.li2}>
         <img src={phone} alt="" />
-        <a href="tel: +996 999 51 90 10"
+        <a href="tel: 0551788146"
          className={s.num2}>
-        +996 999 51 90 10
+        +996 551 788 146
         </a>
         </li>
       <li className={s.li2}>
-      <img src={phone} alt="" />
-      <a href="tel:+996 551 78 41 46"
-      className={s.num2}>
-          +996 551 78 41 46
-        </a>
-        </li>
-      <li className={s.li2}>
-         <a href='mailto:atamankeyzhi@bk.ru'
+         <a href='mailto:ataman.product01@gmail.com'
         className={s.li2}
-        >atamankeyzhi@bk.ru</a> 
+        >ataman.product01</a> 
          </li>
     </ul> 
     </div>

@@ -4,6 +4,27 @@
   margin: 0;
   padding: 0;
 }
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+img {
+  /* z-index: -1; */
+  animation: 2s anim-lineUp ease-out;
+}
 body {
   overflow-x:hidden;
   background-color:  white;

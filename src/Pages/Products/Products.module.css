@@ -6,43 +6,21 @@
   line-height: 57px;
   animation: coming 5s;
 }
-.back_header {
-  height: 129px;
-  top: 500;
-  left: 10;
-  position: absolute;
-  z-index: 100;
-  background-color: #157044;
-}
-.link {
-  color: #ffffff;
-  text-decoration: none;
-}
-.section {
-    padding-left: 80px;
-    display: flex;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  margin-top: 50px;
+  margin-left: 45px;
 }
 
-.cutlets_img:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-  opacity:1;
+.card {
+  padding: 16px;
+  text-align: center;
+  background-color: #ffffff;
 }
-.box {
-  display: grid;
-    margin-top: 45px;
-    margin-left: 100px;
-  width: 400px;
-  height: 290px;
-}
-.box2 {
-  margin-top: 190px;
-  margin-left: 100px;
-  width: 400px;
-  height: 290px;
-}
+
 .cutlets_img {
   width: 400px;
   height: 290px;
@@ -57,23 +35,13 @@
   text-transform: uppercase;
   color: #000000;
 }
-.description {
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
+.cutlets_img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity:1;
 }
-.cost {
-  padding-bottom: 10px;
-  padding-top: 10px;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #efa82c;
-}
-
 .cart {
   font-size: 20px;
   line-height: 28px;
@@ -85,99 +53,23 @@
   height: 44px;
   background: #157044;
 }
-.add {
-  padding-left: 5px;
-}
-.cart2 {
-  margin-bottom: 405px;
-  font-size: 20px;
-  line-height: 28px;
-  color: #ffffff;
-  display: flex;
-  border: none;
-  outline: none;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 24px;
-  gap: 10px;
-  width: 400px;
-  height: 44px;
-  background: #ed4125;
-} 
 
-.column {
-  margin-top: 50px;
-  margin-left: 45px;
-  float: left;
-  width: 30%;
-  padding: 0 10px;
-}
-
-
-.row {
-  overflow-x: none;
-  margin: 0 -5px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.card {
-  margin-bottom: 45px;
-  padding: 16px;
-  text-align: center;
-  background-color: #ffffff
-}
 .cart_img {
   margin-right: 20px;
-  
 }
-
-@media screen and (max-width: 1200px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-
+.link {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
-  .cutlets_img {
-    width: 281.13px;
-height: 208px;
- 
-  }
-  .column {
-    margin-top: 10px;
+  .grid {
     margin-left: 0;
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(281px, 1fr));
   }
-  .cart {
+
+  .cutlets_img {
     width: 281px;
-height: 50px;
-  }
-  .cart2 {
-    width: 281px;
-height: 39px;
-  }
-  .products {
-    font-size: 24px;
-  }
-  .cutlets {
-    padding-top: 8px;
-    font-size: 16px;
-  }
-  .cart {
-    font-size: 16px;
-  }
-  .card {
-    margin-bottom: 0px
+
   }
 }

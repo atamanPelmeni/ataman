@@ -17,25 +17,25 @@ const {t} = useTranslation();
   return (
   <>          
   <div className={s.certificate_img}>
-  <img src={certificate} alt="" />
+  <img src={certificate} alt="сертификат качества" />
   </div>
 
   <div className={s.box_certificate}>
-      <img src={certificate2} alt="" className={s.img_right} />
-  <img src={certificate3} alt="" className={s.img_left} />
+      <img src={certificate2} alt="сертификат качества" className={s.img_right} />
+  <img src={certificate3} alt="сертификат качества" className={s.img_left} />
   </div>
 <div className={s.box_certificate}>
-    <img src={certificate4} alt="" className={s.img_right}/>
-  <img src={certificate5} alt="" className={s.img_left}  />
+    <img src={certificate4} alt="сертификат качества" className={s.img_right}/>
+  <img src={certificate5} alt="сертификат качества" className={s.img_left}  />
 </div>
 
 <div className={s.box_certificate}>
-    <img src={certificate6} alt="" className={s.img_right}/>
-  <img src={certificate7} alt="" className={s.img_left}  />
+    <img src={certificate6} alt="сертификат качества" className={s.img_right}/>
+  <img src={certificate7} alt="сертификат качества" className={s.img_left}  />
 </div>
 
-  <img src={backYellow} alt="" className={s.yellow}/>
-  <img src={Rectangle} alt="" className={s.rectan} />
+  <img src={backYellow} alt="сертификат качества" className={s.yellow}/>
+  <img src={Rectangle} alt="сертификат качества" className={s.rectan} />
   </>
   )
 }

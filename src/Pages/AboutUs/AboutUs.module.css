@@ -110,6 +110,9 @@
 }
 
 @media (max-width: 800px) {
+  .back_yellow2 {
+ display: none;  
+  }
   .aboutUs {
       font-size: 24px;
       padding-top: 80px;

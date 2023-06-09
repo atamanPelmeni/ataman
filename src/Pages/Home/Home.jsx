@@ -21,8 +21,8 @@ const Home = () => {
   const { t } = useTranslation();
   return (
     <>
-      <img src={main} alt="" className={s.main} />
-      <img src={backYellow2} alt="" className={s.yellow} />
+      <img src={main} alt="Атаман" className={s.main} />
+      <img src={backYellow2} alt="Замороженные продукты хорошоего качества" className={s.yellow} />
       <div className={s.main_block}>
         <h1 className={s.h1}>
           {t("home-page-frozen")}
@@ -44,7 +44,7 @@ const Home = () => {
       <p className={s.ataman}>
         {t("ataman-text")}
         </p>
-      <img src={dough} alt="" className={s.dough} />
+      <img src={dough} alt="тесто слоеное Атаман" className={s.dough} />
       <img src={backYellow} alt="" 
       className={s.back_yellow1} />
       <div className={s.main_box}>
@@ -53,15 +53,15 @@ const Home = () => {
             <img src={what} alt="" className={s.img_contact} />
             <img src={whatPhone} alt="" className={s.img_phone} />
  
-            <a href="tel: 0551784146" className={s.number}>
-              +996 551 78 41 46
+            <a href="tel: 0551788146" className={s.number}>
+              +996 551788146
             </a>
           </div>
           <div className={s.box_contact}>
             <img src={email} alt="" className={s.img_contact} />
             <img src={emailPhone} alt="" className={s.img_phone} />
-            <a href="mailto:atamankeyzhi@bk.ru" className={s.number}>
-              atamankeyzhi@bk.ru
+            <a href="mailto:ataman.product01@gmail.com" className={s.number}>
+            ataman.product01
             </a>
           </div>
           <div className={s.box_contact}>

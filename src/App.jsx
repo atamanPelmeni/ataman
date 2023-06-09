@@ -2,7 +2,6 @@ import React, {Suspense} from "react";
 import {
   Routes,  
   Route,
-  Form
 } from "react-router-dom";
 import Header from "./Components/Layouts/Header/Header";
 import Footer from './Components/Layouts/Footer/Footer.jsx';
@@ -15,7 +14,6 @@ import './index.css';
 import FormOrders from "./Pages/FormOrders/FormOrders";
 import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
 import s from './Components/Layouts/Header/Header.module.css';
-import homeStyles from './Components/Layouts/Header/Header-Home.module.css'; 
  
 
 function App() {
@@ -23,33 +21,20 @@ function App() {
     <Suspense fallback={<div className='loading'>Loading...</div>}>
      <Header className={s.header}/> 
      <Routes>
-        <Route exact path="/" element={<div className={homeStyles.header}>
-            <HomePage />
-          </div>} />
-        <Route path="/products" element={ 
-        <div className={s.header}>
-          <ProductsPage />
-          </div>} />
-        <Route path="/certificates" element={
-          <div className={s.header}>
-            <CertificatePage/>
-            </div>} />
-        <Route path="/about-us" element={
-        <div className={s.header}>
-        <AboutUsPage />
-        </div>}/>
-        <Route path="/contacts" element={ 
-           <div className={s.header}>
-            <ContactsPage />
-            </div>} />
-        <Route path="/order" element={  
-        <div className={s.header}>
-          <FormOrders/>
-        </div>} />
-        <Route path="*" element={  
-        <div className={s.header}>
-          <NotFoundPage />
-          </div>}/>
+        <Route exact path="/" 
+        element={<HomePage />} />
+        <Route path="/products" 
+        element={ <ProductsPage />} />
+        <Route path="/certificates" 
+        element={<CertificatePage/>}/>
+        <Route path="/about-us" 
+        element={<AboutUsPage />}/>
+        <Route path="/contacts"
+        element={<ContactsPage /> }/>
+        <Route path="/order" 
+        element={<FormOrders/>} />
+        <Route path="*" 
+        element={<NotFoundPage />}/>
     </Routes>
     <Footer />
   </Suspense>

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import s from './FormOrders.module.css'
 import Rectangle from '../../assets/Rectangle 16.svg'
 import { useTranslation } from 'react-i18next';
-import axios from 'axios';
 
 
 const FormOrders = () => {
@@ -11,6 +10,7 @@ const FormOrders = () => {
     const [formerror, setFormerror] = useState({});
     const [issubmit, setSubmit] = useState(false)
     const [textMessage, setTextMessage] = useState(false);
+
     const handlevalidation = (e) => {
         const {name, value} = e.target;
         setFormvalue({...formvalue, [name]: value});
@@ -24,7 +24,6 @@ const FormOrders = () => {
 
     const validationform = (value) => {
               const errors = {};
-              const emailPattern = /^(([^<>()\[\]\.,;:\s@"]+(\.[^<>()\[\]\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
               if(!value.name) {
                   errors.name = t('enter-name')
               } 
@@ -41,64 +40,31 @@ const FormOrders = () => {
               return errors 
           }
 
-    useEffect (() => {
-        if(Object.keys(formerror).length === 0 && issubmit) {
-            console.log(formvalue);
-        }
-    }, [formerror, formvalue, issubmit]);
+    // useEffect (() => {
+    //     if(Object.keys(formerror).length === 0 && issubmit) {
+    //         // console.log(formvalue);
+    //     }
+    // }, [formerror, formvalue, issubmit]);
 
-    // const Submit = () => {
-    //   if (Object.keys(formerror).length === 0 && issubmit) {
-    //     const requestOptions = {
-    //       method: 'POST',
-    //       headers: { 'Content-Type': 'application/json' },
-    //       body: JSON.stringify(formvalue)
-    //     };
-    
-    //     fetch('http://13.53.133.130/email/email/api/', requestOptions) 
-    //       .then(response => response.json())
-    //       .then(data => console.log(data))
-    //       .catch(error => console.error(error));
-    //   } else {
-    //     return;
-    //   }
-    // };
-
-    const Submit = () => {
+   const Submit = () => {
       if (Object.keys(formerror).length === 0 && issubmit) {
           const requestOptions = {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(formvalue)
-          };
+              body: JSON.stringify(formvalue) };
           fetch('http://13.53.133.130/email/email/api/', requestOptions)
               .then(response => response.json())
-              .then(data => console.log(data))
+              // .then(data => console.log(data))
               .catch(error => console.error(error))
         } else return
       }
-    // const Submit = () => {
-    //   if(Object.keys(formerror).length === 0 && issubmit) {
-    //       const postData = async () => {  try { 
-    //         const response = await axios.post('<http://13.53.133.130/email/email/api/>', JSON.stringify(formvalue), {
-    //             headers: {
-    //               'Content-Type': 'application/json' 
-    //             }
-    //           } );
-    //         console.log(response.data); // Обработка ответа от сервера
-    //       } catch (error) {
-    //         console.error(error); // Обработка ошибок
-    //       }};
-    //       postData();
-    //     } else return
-    //   }
 
     useEffect(() => {
+        Submit()
         if (Object.keys(formerror).length === 0 && issubmit) {
             setTextMessage(true)
         } else return
-     }, [Submit]);
-
+     }, [handleSubmit]);
      const {t} = useTranslation();
 
   return (
@@ -106,7 +72,7 @@ const FormOrders = () => {
     <p className={s.write_us}>
     {t("order")}
     </p>
-   <form onSubmit={Submit} className={s.form} >
+   <form onSubmit={null} className={s.form} >
             <input
               type="text"
               className={s.name}
@@ -145,12 +111,14 @@ const FormOrders = () => {
               className={s.message_error}>
               {formerror.message}
             </span>
+
             <button
               className={s.send}
               onClick={handleSubmit}
               name="button">
               {t("send")}
             </button >
+
             {textMessage ? <p>{t("thanks")}</p> : ""}
           </form>
   <img src={Rectangle} alt="" className={s.rectan} />
