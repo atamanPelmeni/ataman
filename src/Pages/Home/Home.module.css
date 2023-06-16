@@ -165,7 +165,7 @@
 }
 .pelmeni_image {
   width: 90%;
-  /* padding-left: 15%; */
+ margin-left: 5%;
   padding-top: 25%;
 }
 
@@ -199,6 +199,23 @@
     font-size: 60px;
   }
 }
+@media (max-width: 1500px) {
+  .pelmeni_image {
+    padding-top: 18%;
+  }
+  .card {
+    margin-top: 10%;
+    margin-left: 24%;
+  }
+  .dough {
+    top: 1360px;
+  }
+  .ataman {
+    margin-left: 20%;
+    padding-top: 190px;
+  width: 930px;
+}
+}
 @media (max-width: 1370px) {
   .dough {
     top: 1200px;
@@ -218,7 +235,7 @@
   .ataman {
     padding-top: 100px;
     margin-left: 10%;
-    width: 800px;
+    width: 930px;
   }
   .yellow {
     top: 900px;
