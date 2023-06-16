@@ -54,5 +54,7 @@
 "order": "You can order or ask your questions, we will be happy to answer! 😊 ",
 "order-text": "ORDER",
 "invalid": "Invalid email address",
-"required": "Required"
+"required": "Required",
+"sales": "SALES DEPARTMENT:",
+"sorry": "We're sorry, something went wrong, error loading products."
 }

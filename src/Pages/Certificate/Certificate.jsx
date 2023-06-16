@@ -13,13 +13,11 @@ import s from './Certificate.module.css'
 
 const Certificate = () => {
 const {t} = useTranslation();
-
   return (
   <>          
   <div className={s.certificate_img}>
   <img src={certificate} alt="сертификат качества" />
   </div>
-
   <div className={s.box_certificate}>
       <img src={certificate2} alt="сертификат качества" className={s.img_right} />
   <img src={certificate3} alt="сертификат качества" className={s.img_left} />

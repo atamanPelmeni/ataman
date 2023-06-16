@@ -14,11 +14,12 @@ import './index.css';
 import FormOrders from "./Pages/FormOrders/FormOrders";
 import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
 import s from './Components/Layouts/Header/Header.module.css';
+import sl from './Components/loader/Loader.module.css' // styles for loader 
  
 
 function App() {
   return (
-    <Suspense fallback={<div className='loading'>Loading...</div>}>
+    <Suspense fallback={<div className={sl.loader}></div>}>
      <Header className={s.header}/> 
      <Routes>
         <Route exact path="/" 
@@ -38,7 +39,6 @@ function App() {
     </Routes>
     <Footer />
   </Suspense>
- 
   );
 }
 

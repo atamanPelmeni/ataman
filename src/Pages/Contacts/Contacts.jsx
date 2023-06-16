@@ -40,6 +40,23 @@ const {t} = useTranslation();
         +996 551 788 146
         </a>
         </li>
+
+        <li className={s.li}>ОТДЕЛ ПРОДАЖ:</li>
+        <li className={s.li}>
+        <img src={phone} alt="" />
+        <a href="tel:+996 553 117 773"
+         className={s.num}>
+        +996 553 117 773
+        </a>
+        </li>
+        <li className={s.li}>
+        <img src={phone} alt="" />
+        <a href="tel:+996 999 519 010"
+         className={s.num}>
+        +996 999 519 010
+        </a>
+        </li>
+
       <li className={s.li}>
          <a href='mailto:ataman.product01@gmail.com'
         className={s.li}
@@ -78,6 +95,22 @@ const {t} = useTranslation();
         +996 551 788 146
         </a>
         </li>
+        <li className={s.li2}>{t('sales')}</li>
+        <li className={s.li2}>
+        <img src={phone} alt="" />
+        <a href="tel:+996 553 117 773"
+         className={s.num}>
+        +996 553 117 773
+        </a>
+        </li>
+        <li className={s.li2}>
+        <img src={phone} alt="" />
+        <a href="tel:+996 999 519 010"
+         className={s.num}>
+        +996 999 519 010
+        </a>
+        </li>
+
       <li className={s.li2}>
          <a href='mailto:ataman.product01@gmail.com'
         className={s.li2}

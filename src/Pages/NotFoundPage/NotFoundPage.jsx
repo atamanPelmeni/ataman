@@ -8,8 +8,6 @@ const NotFoundPage = () => {
 const {t} = useTranslation();
   return (
     <>
-    <img src="https://banketof.ru/articles/wp-content/uploads/2020/04/screenshot_6-2.jpg" 
-    alt="пельмени" className={s.pelmeni} />
       <div className={s.not}>
        {t("not-page")} 
        <Link to="/" className={s.home}>{t("home")}</Link>

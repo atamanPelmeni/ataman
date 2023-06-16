@@ -82,13 +82,6 @@ const changeLanguage = (language) => {
       
     </header>
     <div className={s.animation}>  
-      {/* <div className={s.link_basket}> */}
-        
-       {/* <Link to="order" className={s.basket}>
-        Заказать
-                <img src={basket} alt="" className={s.basket} />
-                </Link> */}
-    {/* </div> */}
      
               <div className={s.language}>
                  <div 
@@ -101,7 +94,6 @@ const changeLanguage = (language) => {
                </div>
                </div>
                </div>
-  {/* <div className={s.back_header}></div> */}
         </>    
   )
 }

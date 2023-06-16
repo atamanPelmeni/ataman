@@ -137,9 +137,21 @@ top: 1101.5px;
 }
 
 @media (max-width: 1500px) {
+  .second_column {
+    padding-top: 70px;
+  }
+  .footer {
+    display: block;
+  }
+  footer {
+    height: 800px;
+  }
+  .third_column {
+    padding-top: 70px;
+    margin-left: 8%
+  }
   li {
     display: inline-block;
-    /* padding-right: 10px; */
   }
   .third_column {
    padding-left: 20px;

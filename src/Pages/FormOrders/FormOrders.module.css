@@ -1,8 +1,8 @@
 .form {
- padding-left: 40%;
+  padding-left: 40%;
 }
 .name {
-    display: block;
+  display: block;
   font-size: 27px;
   padding: 16px 0px 16px 10px;
   width: 517px;
@@ -23,7 +23,7 @@
 }
 
 .email {
-    display: block;
+  display: block;
   font-size: 27px;
   margin-top: 20px;
   padding: 16px 0px 16px 10px;
@@ -44,7 +44,7 @@
 }
 
 .message {
-    display: block;
+  display: block;
   font-size: 27px;
   resize: none;
   margin-top: 20px;
@@ -72,7 +72,7 @@
   padding: 15px;
   width: 249px;
   height: 66px;
-  background: #ED4125;
+  background: #157044;
   border: none;
 }
 
@@ -94,8 +94,8 @@
   position: absolute;
 }
 .write_us {
-    padding-bottom: 45px;
-    padding-top: 100px;
+  padding-bottom: 45px;
+  padding-top: 100px;
   font-weight: 700;
   font-size: 30px;
   line-height: 57px;
@@ -104,18 +104,24 @@
   text-align: center;
 }
 .rectan {
-    position: absolute;
-    width: 100%;
-    height: 120%;
-    z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  z-index: -1;
   left: 0;
   top: 100px;
+}
+
+@media (max-width: 1200px) {
+  .form {
+    padding-left: 10%;
   }
+}
 
 @media (max-width: 800px) {
   .write_us {
     padding-bottom: 15px;
-    padding-top: 46px;
+    /* padding-top: 70px; */
     display: block;
     font-weight: 500;
     font-size: 25px;
@@ -133,7 +139,7 @@
   .distance {
     padding-top: 0%;
   }
-
+  
   .number {
     padding-left: 0;
   }

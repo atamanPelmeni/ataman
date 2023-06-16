@@ -1,9 +1,9 @@
 .aboutUs {
-    animation-name: appear;
-    animation-duration: 3s;
+  animation-name: appear;
+  animation-duration: 3s;
   padding-top: 100px;
   padding-bottom: 45px;
-  text-align: center; 
+  text-align: center;
   font-weight: 700;
   font-size: 50px;
   line-height: 57px;
@@ -12,8 +12,8 @@
 }
 
 .what_they {
-    animation-name: appear;
-    animation-duration: 3s;
+  animation-name: appear;
+  animation-duration: 3s;
   padding-top: 45px;
   text-align: center;
   font-weight: 700;
@@ -24,8 +24,8 @@
 }
 
 .manager {
-    animation-name: appear;
-    animation-duration: 3s;
+  animation-name: appear;
+  animation-duration: 3s;
   padding-left: 6%;
   padding-bottom: 24px;
   font-weight: 500;
@@ -35,17 +35,17 @@
 }
 
 .director {
-    animation-name: appear;
-    animation-duration: 3s;
+  animation-name: appear;
+  animation-duration: 3s;
   padding-left: 6%;
   font-weight: 300;
   font-size: 30px;
   line-height: 46px;
   text-transform: uppercase;
 }
-.director {  
-     animation-name: appear;
-    animation-duration: 3s;
+.director {
+  animation-name: appear;
+  animation-duration: 3s;
   padding-left: 6%;
   font-weight: 300;
   font-size: 30px;
@@ -54,8 +54,8 @@
 }
 
 .mission {
-    animation-name: appear;
-    animation-duration: 3s;
+  animation-name: appear;
+  animation-duration: 3s;
   padding-top: 24px;
   padding-left: 6%;
   text-transform: uppercase;
@@ -63,8 +63,8 @@
   line-height: 46px;
 }
 .we {
-    animation-name: appear;
-    animation-duration: 3s;
+  animation-name: appear;
+  animation-duration: 3s;
   padding-top: 24px;
   padding-left: 6%;
   width: 70%;
@@ -73,8 +73,8 @@
   line-height: 46px;
 }
 .live {
-    animation-name: appear;
-    animation-duration: 3s;
+  animation-name: appear;
+  animation-duration: 3s;
   padding-left: 6%;
   font-size: 30px;
   width: 70%;
@@ -82,41 +82,45 @@
 
 .back_yellow1 {
   height: 700px;
-    width: 100%;
-    z-index: -10;
-    position: absolute;
-    left: 0;
-    top: 100px;  
-  }
-  .back_yellow2 {
-    height: 1200px;
-    width: 100%;
-    z-index: -10;
-    position: absolute;
-    left: 0;
-    top: 700px;  
-  }
+  width: 100%;
+  z-index: -10;
+  position: absolute;
+  left: 0;
+  top: 100px;
+}
+.back_yellow2 {
+  height: 1200px;
+  width: 100%;
+  z-index: -10;
+  position: absolute;
+  left: 0;
+  top: 700px;
+}
 .back_yellow3 {
   height: 800px;
   width: 100%;
   z-index: -10;
   position: absolute;
   left: 0;
-  top: 2000px;  
+  top: 2000px;
 }
 @keyframes appear {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 800px) {
   .back_yellow2 {
- display: none;  
+    display: none;
   }
   .aboutUs {
-      font-size: 24px;
-      padding-top: 80px;
-      padding-bottom: 20px;
+    font-size: 24px;
+    padding-top: 80px;
+    padding-bottom: 20px;
   }
   .manager {
     font-size: 24px;
@@ -127,11 +131,11 @@
   }
   .what_they {
     font-size: 24px;
-line-height: 28px;
+    line-height: 28px;
   }
   .mission {
     font-size: 20px;
-line-height: 23px;
+    line-height: 23px;
   }
   .we {
     font-size: 15px;
@@ -140,6 +144,6 @@ line-height: 23px;
   .live {
     width: 80%;
     font-size: 18px;
-line-height: 21px;
+    line-height: 21px;
   }
 }
