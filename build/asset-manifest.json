@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9935de42.css",
-    "main.js": "/static/js/main.58eb1e9f.js",
+    "main.css": "/static/css/main.3c0dc488.css",
+    "main.js": "/static/js/main.4cc81fd5.js",
     "static/media/Rectangle16(1).svg": "/static/media/Rectangle16(1).db284eaf29b1e38a767a897611df04c4.svg",
     "static/media/certificate.svg": "/static/media/certificate.9320e02c3f233bdb4072d25b9e88ea8a.svg",
     "static/media/Rectangle1Main.svg": "/static/media/Rectangle1Main.2b6051253c86892f6e8d9fbbdf044077.svg",
@@ -36,11 +36,11 @@
     "static/media/Rectangle2.svg": "/static/media/Rectangle2.d36698cc76824c2013e71ec8cc9a1e0c.svg",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
     "static/media/vector.svg": "/static/media/vector.79c30ce36271d998fe2e690172f6f77a.svg",
-    "main.9935de42.css.map": "/static/css/main.9935de42.css.map",
-    "main.58eb1e9f.js.map": "/static/js/main.58eb1e9f.js.map"
+    "main.3c0dc488.css.map": "/static/css/main.3c0dc488.css.map",
+    "main.4cc81fd5.js.map": "/static/js/main.4cc81fd5.js.map"
   },
   "entrypoints": [
-    "static/css/main.9935de42.css",
-    "static/js/main.58eb1e9f.js"
+    "static/css/main.3c0dc488.css",
+    "static/js/main.4cc81fd5.js"
   ]
 }
